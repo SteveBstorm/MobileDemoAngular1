@@ -16,6 +16,9 @@ import { TotimePipe } from './shared/totime.pipe';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { EnfantComponent } from './components/demo/demo4/enfant/enfant.component';
+import { Exo2Component } from './components/exercice/exo2/exo2.component';
+import { Exo2listeComponent } from './components/exercice/exo2/exo2liste/exo2liste.component';
+import { Demo5Component } from './components/demo/demo5/demo5.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { EnfantComponent } from './components/demo/demo4/enfant/enfant.component
     TotimePipe,
     Demo3Component,
     Demo4Component,
-    EnfantComponent
+    EnfantComponent,
+    Exo2Component,
+    Exo2listeComponent,
+    Demo5Component
   ],
   imports: [
     BrowserModule,

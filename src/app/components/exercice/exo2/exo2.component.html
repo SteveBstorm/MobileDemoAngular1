@@ -1,0 +1,8 @@
+<h4>Liste de course</h4>
+Ajouter :
+<input type="text" [(ngModel)]="newArticle">
+<button (click)="addArticle()">Ajouter</button>
+
+<hr />
+<app-exo2liste [listeArticle]="maListe"
+               (deleteEvent)="removeArticle($event)"></app-exo2liste>

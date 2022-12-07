@@ -1,0 +1,8 @@
+<h4>Panier</h4>
+<ul>
+  <li *ngFor="let article of listeArticle;
+              let i = index;">
+    {{article}}
+    <button (click)="deleteMethod(i)">X</button>
+  </li>
+</ul>

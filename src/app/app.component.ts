@@ -16,9 +16,11 @@ export class AppComponent {
       {title : "Pipes", url : "demo/demo2"},
       {title : "Directives", url : "demo/demo3"},
       {title : "@Input/@Output", url : "demo/demo4"},
+      {title : "Services", url : "demo/demo5"},
     ]},
     {title : "Exercices", children : [
-      {title : "Chronomètre", url : "exercice/exo1"}
+      {title : "Chronomètre", url : "exercice/exo1"},
+      {title : "Shopping List", url : "exercice/exo2"}
     ]}
   ]
 }
