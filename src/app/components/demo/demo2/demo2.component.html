@@ -12,6 +12,6 @@
 <p>Date pipe : {{maDate | date : 'dd:MM/yyyy'}}</p>
 
 <p>Valeur en euro : {{maValeur}}</p>
-<p>Valeur en Bitcoin : {{maValeur | eurtobtc | number : '1.0-8'}}</p>
+<p>Valeur en Bitcoin : {{maValeur | eurtobtc : monTexte}}</p>
 
 <p>{{myObject | json}}</p>

@@ -1,0 +1,30 @@
+<p>demo7 works!</p>
+<form *ngIf="myForm" [formGroup]="myForm" (ngSubmit)="submitForm()">
+    <p>Nom* : <select formControlName="nom">
+        <option value="toto">Toto</option>
+        <option value="merlin">Marcel</option>
+        <option value="arthur">Hubert</option>
+        <option value="bidule">bidule</option>
+    </select></p>
+    <p *ngIf="myForm.controls['nom'].invalid && myForm.controls['nom'].touched">
+       Le nom est requis
+    </p>
+    <p>Prénom : <input formControlName="prenom"></p>
+    <p *ngIf="myForm.controls['prenom'].errors" style="color : red;">
+        {{myForm.controls['prenom'].errors['tropPetitError'] ??
+        myForm.controls['prenom'].errors['tropGrandError'] ?? ''}}
+    </p>
+    <p *ngIf="myForm.controls['prenom'].errors">
+
+    </p>
+    <p>Email : <input formControlName="email"></p>
+    <hr />
+    <p>FormArray</p>
+    <button (click)="ajoutTel()" type="button">Ajouter un telephone</button>
+    <ul formArrayName="tels">
+        <li *ngFor="let t of getTelArray().controls; let i = index;">
+           Tel {{i+1}} :  <input [formControlName]="i">
+        </li>
+    </ul>
+    <button type="submit" [disabled]="!myForm.valid">Valider</button>
+</form>

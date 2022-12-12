@@ -7,7 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { DemoComponent } from './components/demo/demo.component';
 import { Demo1Component } from './components/demo/demo1/demo1.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Demo2Component } from './components/demo/demo2/demo2.component';
 import { EurtobtcPipe } from './shared/eurtobtc.pipe';
 import { ExerciceComponent } from './components/exercice/exercice.component';
@@ -19,6 +19,11 @@ import { EnfantComponent } from './components/demo/demo4/enfant/enfant.component
 import { Exo2Component } from './components/exercice/exo2/exo2.component';
 import { Exo2listeComponent } from './components/exercice/exo2/exo2liste/exo2liste.component';
 import { Demo5Component } from './components/demo/demo5/demo5.component';
+import { Exo3Component } from './components/exercice/exo3/exo3.component';
+import { EnfantExo3Component } from './components/exercice/exo3/enfant-exo3/enfant-exo3.component';
+import { Demo6Component } from './components/demo/demo6/demo6.component';
+import { ResultComponent } from './components/demo/demo6/result/result.component';
+import { Demo7Component } from './components/demo/demo7/demo7.component';
 
 
 @NgModule({
@@ -38,12 +43,18 @@ import { Demo5Component } from './components/demo/demo5/demo5.component';
     EnfantComponent,
     Exo2Component,
     Exo2listeComponent,
-    Demo5Component
+    Demo5Component,
+    Exo3Component,
+    EnfantExo3Component,
+    Demo6Component,
+    ResultComponent,
+    Demo7Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

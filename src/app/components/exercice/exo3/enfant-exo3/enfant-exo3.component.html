@@ -1,0 +1,9 @@
+<p>enfant-exo3 works!</p>
+<ul>
+    <li *ngFor="let a of liste; let i = index">
+        {{a.qtyChoice}} - {{a.title}}
+        <button (click)="ajouter(i)">+</button>
+        <button (click)="retirer(i)">-</button>
+        <button (click)="supprimerArticle(i)">X</button>
+    </li>
+</ul>

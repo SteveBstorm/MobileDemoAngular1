@@ -5,9 +5,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class EurtobtcPipe implements PipeTransform {
 
-  transform(value: number): number {
-
-    return value / 17130.09;
+  transform(value: number, crypto : string): string {
+    if(crypto == "eth") return value / 1170 + ' ETH';
+    if(crypto == "btc") return value / 17130.09 + ' BTC';
+    return "crypto non prise en comptes"
   }
 
 }
