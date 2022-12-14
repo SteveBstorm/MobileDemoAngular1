@@ -1,33 +1,38 @@
 {
-    "users" : [
-        {
-            "id" : 1,
-            "nom" : "Arthur",
-            "email" : "arthur@mail.com",
-            "role" : "roi"
-        },
-        {
-            "id" : 2,
-            "nom" : "Merlin",
-            "email" : "merlin@mail.com",
-            "role" : "enchanteur"
-        },
-        {
-            "id" : 3,
-            "nom" : "Leodagan",
-            "email" : "Leodagan@mail.com",
-            "role" : "casse couille"
-        }
-    ],
-
-    "category" : [
-        {
-            "id" : 1,
-            "nom" : "Chevalier"
-        },
-        {
-            "id" : 2,
-            "nom" : "Glandu de la campagne"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "nom": "Arthur",
+      "email": "arthur@mail.com",
+      "role": "roi"
+    },
+    {
+      "id": 2,
+      "nom": "Merlin",
+      "email": "merlin@mail.com",
+      "role": "enchanteur"
+    },
+    {
+      "id": 3,
+      "nom": "Leodagan",
+      "email": "Leodagan@mail.com",
+      "role": "casse couille"
+    },
+    {
+      "nom": "Perceval",
+      "email": "perceval@mail.com",
+      "role": "pignouf",
+      "id": 4
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "nom": "Chevalier"
+    },
+    {
+      "id": 2,
+      "nom": "Glandu de la campagne"
+    }
+  ]
 }

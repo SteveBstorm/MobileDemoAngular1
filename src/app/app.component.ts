@@ -33,7 +33,7 @@ export class AppComponent implements OnInit{
       {title : "Services", url : "demo/demo5"},
       {title : "Routing", url : "demo/demo6"},
       {title : "Formulaire", url : "demo/demo7"},
-      {title : "**", url : "demo/demo8"},
+      {title : "ConsoAPI", url : "demo/demo8"},
     ]},
     {title : "Exercices", children : [
       {title : "Chronomètre", url : "exercice/exo1"},

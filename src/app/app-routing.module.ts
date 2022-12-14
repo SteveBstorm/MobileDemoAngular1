@@ -9,6 +9,7 @@ import { Demo5Component } from './components/demo/demo5/demo5.component';
 import { Demo6Component } from './components/demo/demo6/demo6.component';
 import { ResultComponent } from './components/demo/demo6/result/result.component';
 import { Demo7Component } from './components/demo/demo7/demo7.component';
+import { Demo8Component } from './components/demo/demo8/demo8.component';
 import { ExerciceComponent } from './components/exercice/exercice.component';
 import { Exo1Component } from './components/exercice/exo1/exo1.component';
 import { Exo2Component } from './components/exercice/exo2/exo2.component';
@@ -27,7 +28,7 @@ const routes: Routes = [
     {path : "demo6", canActivate : [AuthGuard], component : Demo6Component},
     {path : "result/:toto", component : ResultComponent},
     {path : "demo7", component : Demo7Component},
-    {path : "demo8", component : Demo7Component},
+    {path : "demo8", component : Demo8Component},
 
   ]},
   {path : "exercice", component : ExerciceComponent, children : [
