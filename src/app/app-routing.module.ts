@@ -27,6 +27,7 @@ const routes: Routes = [
     {path : "demo6", canActivate : [AuthGuard], component : Demo6Component},
     {path : "result/:toto", component : ResultComponent},
     {path : "demo7", component : Demo7Component},
+    {path : "demo8", component : Demo7Component},
 
   ]},
   {path : "exercice", component : ExerciceComponent, children : [

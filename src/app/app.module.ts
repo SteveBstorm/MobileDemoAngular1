@@ -24,8 +24,9 @@ import { EnfantExo3Component } from './components/exercice/exo3/enfant-exo3/enfa
 import { Demo6Component } from './components/demo/demo6/demo6.component';
 import { ResultComponent } from './components/demo/demo6/result/result.component';
 import { Demo7Component } from './components/demo/demo7/demo7.component';
+import { Demo8Component } from './components/demo/demo8/demo8.component';
 
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,13 +49,15 @@ import { Demo7Component } from './components/demo/demo7/demo7.component';
     EnfantExo3Component,
     Demo6Component,
     ResultComponent,
-    Demo7Component
+    Demo7Component,
+    Demo8Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

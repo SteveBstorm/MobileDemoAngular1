@@ -30,6 +30,7 @@ export class Demo7Component implements OnInit {
     return this.myForm.controls['tels'] as FormArray
   }
   ajoutTel() {
+    this.myForm.controls['tels']
     this.getTelArray().push(new FormControl(null, Validators.required))
   }
 

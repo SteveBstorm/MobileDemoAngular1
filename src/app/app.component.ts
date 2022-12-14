@@ -1,13 +1,27 @@
+import { FakeauthService } from './components/demo/demo5/fakeauth.service';
 import { Link } from 'src/app/shared/models/link.model';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'DemoMobile2022';
+
+  isConnected! : boolean
+  constructor(
+    private authService : FakeauthService
+    ){}
+  ngOnInit(): void {
+      //this.isConnected = this.authService.isConnected
+      this.authService.isConnectedSubject.subscribe({
+        next : (data : boolean) => { this.isConnected = data},
+        error : () => {},
+        complete : () => {}
+      })
+  }
 
   menu : Link[] = [
     {title : "Home", url : "home"},
@@ -19,6 +33,7 @@ export class AppComponent {
       {title : "Services", url : "demo/demo5"},
       {title : "Routing", url : "demo/demo6"},
       {title : "Formulaire", url : "demo/demo7"},
+      {title : "**", url : "demo/demo8"},
     ]},
     {title : "Exercices", children : [
       {title : "Chronomètre", url : "exercice/exo1"},

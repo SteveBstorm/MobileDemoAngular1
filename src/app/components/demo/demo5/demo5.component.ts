@@ -15,7 +15,11 @@ export class Demo5Component implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.status = this._monService.isConnected
+    this._monService.isConnectedSubject.subscribe({
+      next : (data : boolean) => { this.status = data},
+      error : () => {},
+      complete : () => {}
+    })
   }
 
   mylogin() {
